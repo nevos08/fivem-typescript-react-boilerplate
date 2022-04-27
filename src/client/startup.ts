@@ -5,4 +5,9 @@ on("onClientResourceStart", () => {
     View.sendMessage({ action: "hello", msg: "world" })
 })
 
-console.log("Hello from TypeScript");
+const tick = setTick(() => {
+    if (NetworkIsSessionStarted()) {
+        emitNet("core:server:playerJoined");
+        clearTick(tick);
+    }   
+})

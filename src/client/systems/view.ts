@@ -13,4 +13,12 @@ export class View {
         }
         on(`__cfx_nui:${eventName}`, callback);
     }
+
+    static openPage(pageName: string) {
+        View.sendMessage({ action: "openPage", pageName: pageName })
+    }
+
+    static closePage(pageName: string) {
+        View.sendMessage({ action: "closePage", pageName: pageName })
+    }
 }
