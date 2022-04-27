@@ -8,7 +8,7 @@
     "ui-dev": "vite --config ./ui/vite.config.ts",
     "ui-build": "tsc -p ./ui/tsconfig.json && vite build ui"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@citizenfx/client": "^2.0.5483-1",
     "@citizenfx/server": "^2.0.5483-1",
