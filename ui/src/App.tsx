@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useEffect, useState, FC } from "react"
-import "react-toastify/dist/ReactToastify.css"
 
 // Interfaces
 import IContext from "./interfaces/IContext"
