@@ -19,3 +19,7 @@ I prepared some functions for you to make developing your NUI pages easier.
 - game/client/nui.ts contains to functions to emit an event and to listen to NUI events.
 - web/src/utils/fetchNui contains a function to emit an event to the client.
 - web/src/hooks/useNuiEvent contains a function to listen for NUI events. It doesnt need to be used inside "useEffect".
+
+### shadcn-ui
+
+This branch already has shadcn-ui installed for you. Take a look at their [documentation](https://ui.shadcn.com/docs)
