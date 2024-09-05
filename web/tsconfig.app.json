@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@shared/*": ["../game/shared/*"]
     },
     "target": "ES2020",
