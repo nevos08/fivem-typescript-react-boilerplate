@@ -1,0 +1,21 @@
+{
+  "name": "nvx_multicharacter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "bun install",
+    "dev": "bun run scripts/build.js --watch",
+    "build": "bun run scripts/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@citizenfx/client": "^2.0.22443-1",
+    "@citizenfx/server": "^2.0.22443-1",
+    "@communityox/fx-utils": "^0.0.4",
+    "@types/node": "^24.10.1",
+    "prettier": "^3.6.2"
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": "./",
+        "paths": {
+            "@client/*": [
+                "./src/client/*"
+            ],
+            "@server/*": [
+                "./src/server/*"
+            ],
+            "@shared/*": [
+                "./src/shared/*"
+            ],
+            "@static/*": [
+                "./static/*"
+            ],
+            "@types/*": [
+                "./types/*"
+            ]
+        },
+        "types": [
+            "@types/node",
+            "@citizenfx/server",
+            "@citizenfx/client"
+        ],
+        "module": "es2022",
+        "target": "es2023",
+        "lib": [
+            "ES2023"
+        ],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowUnreachableCode": false,
+        "strictFunctionTypes": true,
+        "moduleResolution": "bundler",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true
+    },
+    "include": [
+        "./src",
+        "./types"
+    ]
+}
