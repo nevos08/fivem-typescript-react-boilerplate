@@ -53,10 +53,10 @@ createBuilder(
       },
     });
 
-    if (web && !watch) await exec('cd ./web && pnpm build');
+    if (web && !watch) await exec('cd ./web && bun run build');
   },
 );
 
 if (web && watch) {
-  await exec('cd ./web && pnpm dev');
+  await exec('cd ./web && bun run dev');
 }
