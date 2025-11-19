@@ -45,7 +45,7 @@ createBuilder(
       client_scripts: [outfiles.client],
       server_scripts: [outfiles.server],
       files: [...files],
-      dependencies: ['/server:13068', '/onesync'],
+      dependencies: ['/server:13068', '/onesync', 'ox_lib'],
       metadata: {
         lua54: 'yes',
         node_version: '22',
@@ -54,7 +54,7 @@ createBuilder(
     });
 
     if (web && !watch) await exec('cd ./web && pnpm build');
-  }
+  },
 );
 
 if (web && watch) {

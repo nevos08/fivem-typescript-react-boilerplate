@@ -1,7 +1,11 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.prettierPath": "./node_modules/prettier",
     "editor.rulers": [
         100
-    ]
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "prettier.prettierPath": "./node_modules/prettier",
 }

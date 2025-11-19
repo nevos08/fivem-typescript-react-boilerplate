@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "bun install",
+    "setup": "bun install && cd web && bun install",
     "dev": "bun run scripts/build.js --watch",
     "build": "bun run scripts/build.js"
   },
@@ -15,7 +15,19 @@
     "@citizenfx/client": "^2.0.22443-1",
     "@citizenfx/server": "^2.0.22443-1",
     "@communityox/fx-utils": "^0.0.4",
+    "@eslint/js": "^9.39.1",
+    "@eslint/json": "^0.14.0",
     "@types/node": "^24.10.1",
-    "prettier": "^3.6.2"
+    "esbuild": "^0.27.0",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "@communityox/ox_lib": "^3.32.1",
+    "@communityox/oxmysql": "^1.4.3",
+    "@nativewrappers/client": "^1.7.33",
+    "@nativewrappers/server": "^0.0.136"
   }
 }
