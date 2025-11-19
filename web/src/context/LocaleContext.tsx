@@ -17,7 +17,17 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      import('../../../locales/en.json').then((devLocales) => {
+        console.log('Initialized dev locales');
+        setLocales(devLocales);
+      });
+
+      return;
+    }
+
     fetchNui<{ locale: any }>('fetchLocales').then((response) => {
+      console.log('[LocaleContext] Locales loaded.');
       setLocales(response.locale);
     });
   }, []);

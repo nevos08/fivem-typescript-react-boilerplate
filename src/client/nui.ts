@@ -12,8 +12,7 @@ export function onNui<T = any>(eventName: string, callback: (data: T, cb: Functi
   on(`__cfx_nui:${eventName}`, callback);
 }
 
-// Send locales to NUI when its ready
-onNui('ready', (cb) => {
+onNui('fetchLocales', (cb) => {
   const localeData = LoadJsonFile<RawLocales>(`locales/${locale}.json`);
   cb({ locale: localeData });
 });
