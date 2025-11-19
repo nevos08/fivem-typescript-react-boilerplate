@@ -1,15 +1,14 @@
 {
-  "name": "nvx_multicharacter",
+  "name": "fivem-typescript-react-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "setup": "bun install && cd web && bun install",
     "dev": "bun run scripts/build.js --watch",
     "build": "bun run scripts/build.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nevos",
   "license": "ISC",
   "devDependencies": {
     "@citizenfx/client": "^2.0.22443-1",
